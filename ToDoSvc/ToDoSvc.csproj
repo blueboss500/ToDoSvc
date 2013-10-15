@@ -177,6 +177,7 @@
   <ItemGroup>
     <Content Include="Content\site.css" />
     <Content Include="default.html" />
+    <Content Include="default2.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\dsblue.pubxml" />
@@ -196,6 +197,7 @@
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
     <Content Include="Scripts\knockout-2.3.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\todo\app.js" />
     <Content Include="Scripts\todo\delete.js" />
     <Content Include="Scripts\todo\get.js" />
     <Content Include="Scripts\todo\post.js" />

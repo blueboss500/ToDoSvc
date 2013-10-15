@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Todo List</title>
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.0.3.min.js"></script>
+    <script src="Scripts/knockout-2.3.0.js"></script>
+    <script src="Scripts/todo/app.js"></script>
+ 
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <button id="getToDo">Init data</button>
+   
+
+    <div>
+        <form id="newToDoForm">
+            <fieldset>
+                <legend>New Item</legend>
+                
+                <input id="desc" name="desc" type="text" />
+
+                <button type="submit">Add</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <ul id="itemList" data-bind="template: {name: 'todoTemplate', foreach: todoItems}">
+    </ul>
+
+    <script id="todoTemplate" type="text/html">
+        <li class="todo">
+            
+            <span data-bind="text: ID" class="todoID"></span>
+            <span data-bind="text: Desc" class="todoDesc"></span>
+            <button data-bind="attr: { 'data-comment-id': ID }" class="delete" >x</button>
+          
+        </li>
+    </script>
+</body>
+</html>
